@@ -54,35 +54,6 @@ JSON Server:
 API REST simulada para gerenciar dados de usuários, livros e reservas.
 Rápida configuração e suporte a operações CRUD.
 
-Estrutura do Projeto --->
-
-BiblioTech/
-│
-├── src/
-│   ├── components/
-│   │   ├── Login.jsx            # Página de Login
-│   │   ├── Cadastro.jsx         # Página de Cadastro
-│   │   ├── Home.jsx             # Página Principal (Dashboard)
-│   │   └── Livro.jsx            # Componente de visualização de livros
-│   │
-│   ├── styles/
-│   │   ├── login.module.css     # Estilos da página de Login
-│   │   ├── cadastro.module.css  # Estilos da página de Cadastro
-│   │   ├── home.module.css      # Estilos da página Principal
-│   │   └── livro.module.css     # Estilos de livros
-│   │
-│   ├── App.jsx                  # Componente principal da aplicação
-│   ├── index.jsx                # Ponto de entrada
-│   └── routes.jsx               # Configuração das rotas
-│
-├── public/
-│   ├── index.html               # Arquivo HTML principal
-│   └── assets/                  # Recursos estáticos (imagens, fontes)
-│
-├── db.json                      # Banco de dados JSON para JSON Server
-├── package.json                 # Dependências e scripts do projeto
-└── README.md                    # Documentação do projeto
-
 Setup do Projeto -->
 Requisitos:
     Node.js (>=14)
