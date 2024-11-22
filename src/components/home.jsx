@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { FaBook, FaClipboardList, FaSignOutAlt, FaPlus, FaChartBar } from 'react-icons/fa';
-import styles from './home.module.css';
+import styles from '../styles/home.module.css';
 
 function Home({ user }) {
   const [searchTerm, setSearchTerm] = useState('');

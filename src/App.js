@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import Login from './pages/login';
-import CadastroUsuario from './pages/cadastroUsuario';
-import Home from './pages/home';
+import Login from './components/login';
+import CadastroUsuario from './components/cadastroUsuario';
+import Home from './components/home';
 
 function App() {
   const [user, setUser] = useState(null); 

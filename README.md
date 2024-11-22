@@ -1,70 +1,146 @@
-# Getting Started with Create React App
+BiblioTech
+Bem-vindo à BiblioTech, a solução completa para gerenciar reservas e disponibilizar livros físicos e digitais. Este projeto foi desenvolvido para oferecer uma interface moderna, responsiva e funcional, atendendo tanto administradores quanto usuários comuns.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Funcionalidades
+1. Login e Cadastro
+Login:
+Autenticação de usuários baseada em email e senha.
+Mensagens de erro amigáveis em caso de credenciais inválidas.
+Cadastro:
+Registro de novos usuários com informações básicas: nome, email e senha.
+Papel padrão do usuário: user.
+Confirmação visual de sucesso no cadastro.
+2. Gerenciamento de Livros
+Visualização de Livros:
+Lista completa de livros disponíveis com opções de busca por título ou autor.
+Adicionar Livros:
+Usuários administradores podem cadastrar novos livros, especificando:
+Título, Autor, Tipo (Físico ou Ebook).
+Quantidade disponível e local de retirada (para físicos).
+Link de acesso (para ebooks).
+Editar e Remover Livros:
+Administradores podem atualizar informações ou remover livros do catálogo.
+3. Reservas de Livros
+Reserva por Usuários:
+Usuários comuns podem reservar livros físicos ou acessar ebooks diretamente.
+Controle automático de disponibilidade para livros físicos.
+Ver Minhas Reservas:
+Visualização de todos os livros reservados por um usuário, com informações detalhadas:
+Data de reserva.
+Local de retirada (para físicos).
+Link de acesso (para ebooks).
+Relatórios:
+Administradores podem acessar relatórios completos, incluindo:
+Total de livros no catálogo.
+Total de reservas realizadas.
+Livros mais reservados.
+4. Estilo e Design
+Interface moderna e responsiva baseada em CSS Modules.
+Gradientes e sombras sutis para um design profissional.
+Botões e links com transições suaves, melhorando a experiência do usuário.
 
-## Available Scripts
+Tecnologias Utilizadas --->
 
-In the project directory, you can run:
+Frontend
+React:
+Componentização para facilitar manutenção e reuso de código.
+CSS Modules:
+Estilização modular para evitar conflitos de estilo.
+React Router Dom:
+Navegação entre páginas de forma dinâmica.
 
-### `npm start`
+Backend Simulado
+JSON Server:
+API REST simulada para gerenciar dados de usuários, livros e reservas.
+Rápida configuração e suporte a operações CRUD.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Estrutura do Projeto --->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+BiblioTech/
+│
+├── src/
+│   ├── components/
+│   │   ├── Login.jsx            # Página de Login
+│   │   ├── Cadastro.jsx         # Página de Cadastro
+│   │   ├── Home.jsx             # Página Principal (Dashboard)
+│   │   └── Livro.jsx            # Componente de visualização de livros
+│   │
+│   ├── styles/
+│   │   ├── login.module.css     # Estilos da página de Login
+│   │   ├── cadastro.module.css  # Estilos da página de Cadastro
+│   │   ├── home.module.css      # Estilos da página Principal
+│   │   └── livro.module.css     # Estilos de livros
+│   │
+│   ├── App.jsx                  # Componente principal da aplicação
+│   ├── index.jsx                # Ponto de entrada
+│   └── routes.jsx               # Configuração das rotas
+│
+├── public/
+│   ├── index.html               # Arquivo HTML principal
+│   └── assets/                  # Recursos estáticos (imagens, fontes)
+│
+├── db.json                      # Banco de dados JSON para JSON Server
+├── package.json                 # Dependências e scripts do projeto
+└── README.md                    # Documentação do projeto
 
-### `npm test`
+Setup do Projeto -->
+Requisitos:
+    Node.js (>=14)
+    NPM ou Yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Instalação -->
+Clone o repositório:
+    git clone https://github.com/seu-repositorio/bibliotech.git
+    cd bibliotech
+    npm install react react-dom react-router-dom axios react-icons react-scripts json-server @testing-library/react @testing-library/jest-dom @testing-library/user-event web-vitals
 
-### `npm run build`
+URLs -->
+    Frontend: http://localhost:3000
+    JSON Server: http://localhost:5501
+    APIs do JSON Server
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Como rodar? -->
+    Inicialize o servidor ---> npm run server
+    Inicialize o projeto ---> npm start
+    E prontinho! agora o projeto deve abrir no seu navegador!
+    
+Usuários
+    GET /usuarios: Retorna todos os usuários.
+    POST /usuarios: Adiciona um novo usuário.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Livros
+    GET /livros: Retorna todos os livros.
+    POST /livros: Adiciona um novo livro.
+    PATCH /livros/:id: Atualiza informações de um livro.
+    DELETE /livros/:id: Remove um livro.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Reservas
+    GET /reservas: Retorna todas as reservas.
+    POST /reservas: Adiciona uma nova reserva.
+    PATCH /reservas/:id: Atualiza uma reserva existente.
 
-### `npm run eject`
+Testando Funcionalidades 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Cadastro e Login:
+Crie um novo usuário pela página de Cadastro.
+Faça login com o email e senha registrados.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Gerenciamento de Livros:
+Acesse a página de Adicionar Livro como administrador.
+Edite ou remova livros existentes no catálogo.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Reservas:
+Faça login como usuário comum e reserve livros disponíveis.
+Visualize suas reservas na seção "Minhas Reservas".
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Relatórios:
+Faça login como administrador e navegue até "Relatórios" para visualizar estatísticas.
+Futuras Melhorias
+Autenticação JWT:
+Substituir a autenticação local por tokens JWT.
+Suporte para imagens de capa:
+Permitir upload de imagens para os livros.
+Paginação:
+Melhorar o carregamento de grandes volumes de dados.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
