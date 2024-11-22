@@ -1,0 +1,176 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "João Silva",
+      "email": "joao@email.com",
+      "password": "123456",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "nome": "Maria Souza",
+      "email": "maria@email.com",
+      "password": "senha123",
+      "role": "user"
+    },
+    {
+      "id": "b8d2",
+      "nome": "Pablo Marques",
+      "email": "detup.4@gmail.com",
+      "password": "teste123",
+      "role": "user"
+    }
+  ],
+  "livros": [
+    {
+      "id": "1",
+      "titulo": "O Senhor dos Anéis",
+      "autor": "J.R.R. Tolkien",
+      "tipo": "fisico",
+      "disponiveis": 35,
+      "reservas": 2,
+      "endereco": "Rua das Estrelas, 123, Biblioteca Central"
+    },
+    {
+      "id": "2",
+      "titulo": "A Guerra dos Tronos",
+      "autor": "George R.R. Martin",
+      "tipo": "fisico",
+      "disponiveis": 30,
+      "reservas": 1,
+      "endereco": "Rua das Estrelas, 123, Biblioteca Central"
+    },
+    {
+      "id": "3",
+      "titulo": "O Código Da Vinci",
+      "autor": "Dan Brown",
+      "tipo": "ebook",
+      "disponiveis": "infinito",
+      "reservas": 2,
+      "link": "https://bibliotech.com/ebooks/codigo-da-vinci"
+    },
+    {
+      "id": "4",
+      "titulo": "1984",
+      "autor": "George Orwell",
+      "tipo": "ebook",
+      "disponiveis": "infinito",
+      "reservas": 1,
+      "link": "https://bibliotech.com/ebooks/1984"
+    },
+    {
+      "id": "5",
+      "titulo": "Dom Casmurro",
+      "autor": "Machado de Assis",
+      "tipo": "fisico",
+      "disponiveis": 50,
+      "reservas": 1,
+      "endereco": "Rua da Literatura, 55, Biblioteca Nacional"
+    },
+    {
+      "id": "6",
+      "titulo": "O Pequeno Príncipe",
+      "autor": "Antoine de Saint-Exupéry",
+      "tipo": "fisico",
+      "disponiveis": 90,
+      "reservas": 1,
+      "endereco": "Rua do Infante, 333, Biblioteca Municipal"
+    },
+    {
+      "id": "7",
+      "titulo": "A Revolução dos Bichos",
+      "autor": "George Orwell",
+      "tipo": "fisico",
+      "disponiveis": 69,
+      "reservas": 1,
+      "endereco": "Rua da Revolução, 111, Biblioteca Central"
+    },
+    {
+      "id": "8",
+      "titulo": "Cem Anos de Solidão",
+      "autor": "Gabriel García Márquez",
+      "tipo": "fisico",
+      "disponiveis": 29,
+      "reservas": 1,
+      "endereco": "Rua Realismo Mágico, 88, Biblioteca Cultural"
+    },
+    {
+      "id": "9",
+      "titulo": "Os Miseráveis",
+      "autor": "Victor Hugo",
+      "tipo": "fisico",
+      "disponiveis": 19,
+      "reservas": 1,
+      "endereco": "Rua da Justiça, 456, Biblioteca da Cidade"
+    },
+    {
+      "id": "10",
+      "titulo": "Harry Potter e a Pedra Filosofal",
+      "autor": "J.K. Rowling",
+      "tipo": "fisico",
+      "disponiveis": 69,
+      "reservas": 1,
+      "endereco": "Rua da Magia, 1234, Biblioteca dos Bruxos"
+    },
+    {
+      "id": "11",
+      "titulo": "A Menina que Roubava Livros",
+      "autor": "Markus Zusak",
+      "tipo": "ebook",
+      "disponiveis": "infinito",
+      "reservas": 0,
+      "link": "https://bibliotech.com/ebooks/menina-roubava-livros"
+    },
+    {
+      "id": "12",
+      "titulo": "O Alquimista",
+      "autor": "Paulo Coelho",
+      "tipo": "fisico",
+      "disponiveis": 78,
+      "reservas": 1,
+      "endereco": "Rua dos Sonhos, 77, Biblioteca Nacional"
+    },
+    {
+      "id": "13",
+      "titulo": "Percy Jackson e o Ladrão de Raios",
+      "autor": "Rick Riordan",
+      "tipo": "fisico",
+      "disponiveis": 49,
+      "reservas": 0,
+      "endereco": "Rua do Olimpo, 555, Biblioteca Juvenil"
+    },
+    {
+      "id": "14",
+      "titulo": "A Cabana",
+      "autor": "William P. Young",
+      "tipo": "ebook",
+      "disponiveis": "infinito",
+      "reservas": 0,
+      "link": "https://bibliotech.com/ebooks/a-cabana"
+    },
+    {
+      "id": "15",
+      "titulo": "O Hobbit",
+      "autor": "J.R.R. Tolkien",
+      "tipo": "fisico",
+      "disponiveis": 28,
+      "reservas": 1,
+      "endereco": "Rua da Terra-Média, 42, Biblioteca Tolkien"
+    }
+  ],
+  "reservas": [
+    {
+      "id": "1732293408706",
+      "userId": "2",
+      "livroId": "1,2,4,5,6,8,9,7,10,3,12",
+      "data": "2024-11-22T16:36:48.706Z"
+    },
+    {
+      "id": "1732293988079",
+      "userId": "b8d2",
+      "livroId": "1,15",
+      "data": "2024-11-22T16:46:28.079Z"
+    }
+  ]
+}
